@@ -2,17 +2,17 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import HeroSection from "../components/sections/HeroSection"
+import ResumeSection from "../components/sections/ResumeSection"
 import Header from "../components/layout/Header"
 
-function IndexPage() {
+function Resume() {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Resume" />
       <Header />
-      <HeroSection />
+      <ResumeSection />
     </Layout>
   )
 }
 
-export default IndexPage
+export default Resume

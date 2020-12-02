@@ -4,17 +4,17 @@ import styled from "styled-components"
 import { Caption2, SmallText } from "../styles/TextStyles"
 
 const ViewPortfolioButton = props => {
-  const { title, subtitle } = props
+  const { title, subtitle, link, icon } = props
   return (
-    <Link to="/page-2">
+    <Link to={link}>
       <Wrapper>
         <IconWrapper>
-          <Icon src="/images/icons/credit.svg" className="icon" />
+          <Icon src={icon || "/images/icons/credit.svg"} className="icon" />
           <Ring src="/images/icons/icon-ring.svg" />
         </IconWrapper>
         <TextWrapper>
           <Title>{title || "View Projects"}</Title>
-          <Subtitle>{subtitle || "(React)"}</Subtitle>
+          <Subtitle>{subtitle}</Subtitle>
         </TextWrapper>
       </Wrapper>
     </Link>
@@ -53,7 +53,7 @@ const Wrapper = styled.div`
   }
 `
 const TextWrapper = styled.div`
-  display: grid;
+  display: grid; 
   gap: 4px;
 `
 

@@ -1,18 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import HeroSection from "../components/sections/HeroSection"
+import ContactSection from "../components/sections/ContactSection"
 import Header from "../components/layout/Header"
 
-function IndexPage() {
+function Contact() {
   return (
     <Layout>
-      <SEO title="Home" />
-      <Header />
-      <HeroSection />
+      <SEO title="Contact" />
+
+      <ContactSection />
     </Layout>
   )
 }
 
-export default IndexPage
+export default Contact

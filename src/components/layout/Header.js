@@ -36,7 +36,9 @@ function Header() {
 
   return (
     <Wrapper>
-      <img src="/images/logos/logo.svg" alt="" />
+      <Link to="/">
+        <Img src="/images/logo.svg" alt="" />
+      </Link>
       <MenuWrapper count={menuData.length} ref={ref}>
         {menuData.map((item, index) =>
           item.link === "/account" ? (
@@ -67,14 +69,13 @@ export default Header
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 60px;
+  top: 50px;
   display: grid;
   grid-template-columns: 44px auto;
   width: 100%;
   justify-content: space-between;
   padding: 0 80px;
   align-items: center;
-
   @media (max-width: 768px) {
     top: 30px;
   }
@@ -82,6 +83,9 @@ const Wrapper = styled.div`
     top: 20px;
     padding: 0 20px;
   }
+`
+const Img = styled.img`
+  height: 70px;
 `
 
 const MenuWrapper = styled.div`

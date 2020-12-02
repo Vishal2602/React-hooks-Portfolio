@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <>
       <GlobalStyle />
-      <Header />
+     
       <main>{children}</main>
     </>
   )

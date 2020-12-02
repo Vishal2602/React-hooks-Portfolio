@@ -37,22 +37,23 @@ const Wrapper = styled.div`
     transform: rotateY(0deg) rotateX(0deg);
     &.mockup1 {
       transition-delay: 0.1s;
-      transform: translate(-30px, -30px);
+      transform: translate(-30px, -70px);
     }
     &.mockup2 {
       transition-delay: 0.2s;
-      transform: translate(0px, -30px);
+      transform: translate(0px, -70px);
     }
     &.mockup3 {
       transition-delay: 0s;
+      transform: translate(0px, -30px);
     }
     &.mockup4 {
       transition-delay: 0.1s;
-      transform: translate(-120px, 30px);
+      transform: translate(-120px, -10px);
     }
     &.mockup5 {
       transition-delay: 0.2s;
-      transform: translate(-90px, 30px);
+      transform: translate(-90px, -10px);
     }
     :hover {
       filter: brightness(150%) saturate(120%);
@@ -92,7 +93,7 @@ const Wrapper = styled.div`
     left: 214px;
     top: 0px;
 
-    background: url("/images/animations/mockup2.svg"),
+    background: url("/images/mockup2.svg"),
       linear-gradient(
         198.85deg,
         #4316db 12.72%,
@@ -117,7 +118,7 @@ const Wrapper = styled.div`
     left: 37px;
     top: 42px;
 
-    background: url("/images/animations/mockup3.svg"), rgba(23, 12, 61, 0.5);
+    background: url("/images/mockup3.svg"), rgba(23, 12, 61, 0.5);
     box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
@@ -134,7 +135,7 @@ const Wrapper = styled.div`
     left: 90px;
     top: 216px;
 
-    background: url("/images/animations/mockup4.svg"), rgba(39, 20, 62, 0.3);
+    background: url("/images/mockup4.svg"), rgba(39, 20, 62, 0.3);
     box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
@@ -151,7 +152,7 @@ const Wrapper = styled.div`
     left: 512px;
     top: 216px;
 
-    background: url("/images/animations/mockup5.svg"), rgba(39, 20, 62, 0.2);
+    background: url("/images/mockup5.svg"), rgba(39, 20, 62, 0.2);
     box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
